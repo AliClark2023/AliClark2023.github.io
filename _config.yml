@@ -18,18 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Alistair Clark Portfolio
+# variable names & content
+title: Alistair Clark
 email: alistair.clark6@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Game developer site showcasing university and personal projects
+  Game developer showcasing university and personal projects
   Includes: UE 5, Godot, Unity & SFML projects
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  AliClark2023
+linkedin_username: alistairclarkdev
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 

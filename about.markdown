@@ -4,15 +4,24 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![Profile](/assets/img/profilePic.jpg)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# Hello there, I'm Alistair
+I'm a 4th year Computer Game Applications Development (CGAD) student at Abertay University.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I'm interested in all topics of game dev but with a particular interest with game mechanics and systems in rougelites/rougelikes.
 
+Aside from game dev, I'm an avid film fan (in partifcular sci-fi and horror) as well as tinkering with a home lab server.
 
-[jekyll-organization]: https://github.com/jekyll
+# Recent events
+Over the summer, my team and I [Bonny Bandits][BonnyLink] were Dare Academy finalists in which we continued development of our Abertay professional project [Synaptic][SynLink]: A walking simulator/gallery shooter built with Unreal Engine 5.
+
+Currently I'm just starting 4th year at Abertay in which networking and audio programming will be taught. Finally, my honours project is also being developed this year with discussions about the topic underway.
+
+The [home][homeLink] page will showcase all my current work.
+
+![BonnyGroupPhoto](/assets/img/bonnyGroup.jpg)
+
+[BonnyLink]: https://bsky.app/profile/bonnybanditsgames.bsky.social
+[SynLink]: https://bonny-bandits.itch.io/synaptic
+[homeLink]: /index.markdown

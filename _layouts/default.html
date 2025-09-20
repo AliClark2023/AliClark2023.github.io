@@ -19,10 +19,25 @@
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
     <!-- Profile Image -->
-        {%- assign profilePic = "assets/img/profilePic.jpg" -%}
-        <img src="{{profilePic | relative_url}}" alt="Logo" />
+        {%- assign portLogo = "assets/img/bonnyLogo.jpg" -%}
+        <img src="{{portLogo | relative_url}}" alt="Logo" />
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+    <!-- Contact Links-->
+     {%- assign gitLogo = "assets/img/githubLogoB.png" -%}
+     {%- assign linkedLogo = "assets/img/linkedInLogo.png" -%}
+     {%- assign youtubeLogo = "assets/img/youtubeLogo.png" -%}
+        <p>
+          <a href="https://github.com/AliClark2023">
+            <img src ="{{gitLogo | relative_url}}" width="32" height="32" alt = "Clickable GitHub Link">
+          </a>
+          <a href="https://linkedin.com/in/alistairclarkdev">
+            <img src ="{{linkedLogo | relative_url}}" width="40" height="32" alt = "Clickable GitHub Link">
+          </a>
+          <a href="https://www.youtube.com/@AClarkIsADev">
+            <img src ="{{youtubeLogo | relative_url}}" width="40" height="32" alt = "Clickable GitHub Link">
+          </a>
+        </p>
     <!-- Use for setting default image or using variable replacement
         {% if profileImg %}
         <img src="{{profileImg | relative_url}}" alt="Logo" />
@@ -43,6 +58,7 @@
             <a href="{{ page.url }}">{{ page.title | escape }}</a>&nbsp;
         {%- endfor -%}
 
+    <!-- 
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
@@ -50,6 +66,8 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
+     -->
+
       </header>
 
      

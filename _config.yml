@@ -22,8 +22,7 @@
 title: Alistair Clark
 email: alistair.clark6@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Game developer showcasing university and personal projects
-  Includes: UE 5, Godot, Unity & SFML projects
+  Computer games programmer, currently in 4th year at Abertay University - Dundee
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-permalink: /profile/contact/
+permalink: /about/contact/
 ---
 
 ## GitHub

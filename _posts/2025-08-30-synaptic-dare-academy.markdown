@@ -31,7 +31,19 @@ Since the levels where being redesigned into shorter more intense segments the p
 
 Previously, upon activation, the level barriers would query the game world for all objects with the target interface. While this worked for the beta build it was very resource intensive and would not scale well.
 
-To remedy this, the barrier was modified to include an activation volume () in which it query this space alone for the targets.
+"Insert screenshot(barrier activation)" <br>
+To remedy this, the barrier was modified to include an activation volume in which it will query this space for the targets.
+This allows each level to be split into segments and allows the designer to add/remove as many targets as necessary.
 
+As a consequence of this change, it was found that with the addition of these segments (and the number of targets increased dramatically) performance started to drop.
+In investigating this problem it was found that it was the number of targets being rendered in the game level were causing the performance issues.
+To fix this, a spawner object was created that did not render anything in-game. It allowed the designer what target to spawn, when to activate the target and which (when applicable) track for the target to traverse on.
+
+#### Diary Page unlocks
+Another system to iterate on was the diary page unlock system. Previously, a set number of pages to unlock (determined by designer) were assigned to each level and unlocked pages where then signaled to the game mode when the player travels back to the main hub area.
+For this new segmented design, a singular lore page is unlocked after the end of each shooter segment. This page is then able to be displayed in game when the player interacts with a new object (statue) and also unlocks the entrance to the next area.
+<br>
+"Insert screenshot (statue)"
+<br>
 
 [build]: https://bonny-bandits.itch.io/synaptic/devlog/1029909/final-synaptic-build

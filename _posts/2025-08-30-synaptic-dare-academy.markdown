@@ -3,7 +3,7 @@ layout: post
 title:  "Synaptic (Dare Academy)"
 date:   2025-08-30 09:47:52 +0100
 categories: Dare Academy
-displayImage: assets/img/DCAEvent.jpg
+displayImage: assets/img/dareDemo.gif
 ---
 # ---Work-in-Progress---
 ![DCAEvent]({{ site.baseurl }}/assets/img/DCAEvent.jpg)

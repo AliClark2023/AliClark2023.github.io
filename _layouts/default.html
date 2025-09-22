@@ -1,3 +1,13 @@
+<!-- Background image-->
+{%- assign backImg = "assets/img/geoBackground.png" -%}
+<style>
+body {
+  background-image: url('{{backImg | relative_url}}');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style> 
 
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
@@ -27,35 +37,25 @@
      {%- assign gitLogo = "assets/img/githubLogoB.png" -%}
      {%- assign linkedLogo = "assets/img/linkedInLogo.png" -%}
      {%- assign youtubeLogo = "assets/img/youtubeLogo.png" -%}
+     {%- assign itchLogo = "assets/img/itchIcon.png" -%}
         <p>
           <a href="https://github.com/AliClark2023">
             <img src ="{{gitLogo | relative_url}}" width="32" height="32" alt = "Clickable GitHub Link">
           </a>
+           <a href="https://aliclarkdev.itch.io/">
+            <img src ="{{itchLogo | relative_url}}" width="35" height="32" alt = "Clickable Itch.io Link">
+          </a>
           <a href="https://linkedin.com/in/alistairclarkdev">
-            <img src ="{{linkedLogo | relative_url}}" width="40" height="32" alt = "Clickable GitHub Link">
+            <img src ="{{linkedLogo | relative_url}}" width="40" height="32" alt = "Clickable LinkedIn Link">
           </a>
           <a href="https://www.youtube.com/@AClarkIsADev">
-            <img src ="{{youtubeLogo | relative_url}}" width="40" height="32" alt = "Clickable GitHub Link">
+            <img src ="{{youtubeLogo | relative_url}}" width="40" height="32" alt = "Clickable Youtube Link">
           </a>
         </p>
-    <!-- Use for setting default image or using variable replacement
-        {% if profileImg %}
-        <img src="{{profileImg | relative_url}}" alt="Logo" />
-        {% endif %}
-    -->
-    <!--
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-      -->
 
     <!-- page links -->
         {%- for page in site.pages -%}
-            <a href="{{ page.url }}">{{ page.title | escape }}</a>&nbsp;
+            <span style="font-size: 20px;"><a href="{{ page.url }}">{{ page.title | escape }}</a></span>&nbsp
         {%- endfor -%}
 
     <!-- 

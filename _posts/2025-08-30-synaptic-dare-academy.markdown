@@ -11,6 +11,8 @@ Continuing the project from DES315 my team (Bonny Bandits) have improved upon "S
 
 Link to the build used at the event: [DCAFinalBuild][build]
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GeDYPSRBskA?si=0DIg8njw1VeBaS0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
 The following is a breakdown on what was improved upon during the DARE event.
 
 ##### Goals

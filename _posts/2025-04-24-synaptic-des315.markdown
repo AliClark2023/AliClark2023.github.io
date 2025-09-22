@@ -8,4 +8,6 @@ displayImage: assets/img/SynapticMenu.png
 # ---Work-in-Progress---
 Link to the beta build: [beta build][beta]
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PXlDNm1oWtM?si=uZ48GaDZ_laoyEym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 [beta]: https://bonny-bandits.itch.io/synaptic/devlog/935211/synaptic-gold-master-is-out

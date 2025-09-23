@@ -2,10 +2,10 @@
 layout: post
 title:  "Synaptic (Dare Academy)"
 date:   2025-08-30 09:47:52 +0100
-categories: Dare Academy
+categories: Further Development
 displayImage: assets/img/dareDemo.gif
 ---
-# ---Work-in-Progress---
+# ---Document-in-Progress---
 ![DCAEvent]({{ site.baseurl }}/assets/img/DCAEvent.jpg)
 Continuing the project from DES315 my team (Bonny Bandits) have improved upon "Synaptic" during the summer and have showcased our game to the public at the Dundee Contempoary Arts (DCA) building during its annual Drop-in and Play event.
 
@@ -13,8 +13,8 @@ Link to the build used at the event: [DCAFinalBuild][build]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GeDYPSRBskA?si=0DIg8njw1VeBaS0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
-The following is a breakdown on what was improved upon during the DARE event.
 
+## Breakdown
 ##### Goals
 During DARE feedback from the mentors and discussion with the team members it was decided that we would iterate on:
 - Retool narrative 
@@ -31,7 +31,9 @@ Since the levels where being redesigned into shorter more intense segments the p
 
 Previously, upon activation, the level barriers would query the game world for all objects with the target interface. While this worked for the beta build it was very resource intensive and would not scale well.
 
-"Insert screenshot(barrier activation)" <br>
+![Barrier Target Trace]({{ site.baseurl }}/assets/img/BarrierTargetTrace.png)
+*targets detected by barrier*
+
 To remedy this, the barrier was modified to include an activation volume in which it will query this space for the targets.
 This allows each level to be split into segments and allows the designer to add/remove as many targets as necessary.
 
@@ -42,8 +44,8 @@ To fix this, a spawner object was created that did not render anything in-game. 
 #### Diary Page unlocks
 Another system to iterate on was the diary page unlock system. Previously, a set number of pages to unlock (determined by designer) were assigned to each level and unlocked pages where then signaled to the game mode when the player travels back to the main hub area.
 For this new segmented design, a singular lore page is unlocked after the end of each shooter segment. This page is then able to be displayed in game when the player interacts with a new object (statue) and also unlocks the entrance to the next area.
-<br>
-"Insert screenshot (statue)"
-<br>
+
+![Statue object]({{ site.baseurl }}/assets/img/Statue.png)
+*Statue in-game*
 
 [build]: https://bonny-bandits.itch.io/synaptic/devlog/1029909/final-synaptic-build

@@ -3,7 +3,7 @@ layout: post
 title:  "Synaptic (Des315 project)"
 date:   2025-04-24 09:47:52 +0100
 categories: University Project
-displayImage: assets/img/SynapticMenu.png
+displayImage: assets/img/OpeningSceneGif.gif
 ---
 
 # ---Document-in-Progress---
@@ -11,12 +11,13 @@ Link to the beta build: [beta build][beta]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PXlDNm1oWtM?si=uZ48GaDZ_laoyEym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<br>
 ## Skills Developed
-- data table usage
-- game mode and game mode component creation
-- interaction interfaces
-- blueprint usage
-- protoyping VFX
+- Data table usage
+- Game mode and game mode component creation
+- Interaction interfaces
+- Blueprint usage
+- Protoyping VFX
 - UI logic
 - Audio narration progression
 

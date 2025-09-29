@@ -12,6 +12,15 @@ Link to the [mechanics project][mechanics]
 
 Third year Uni project that uses UE 5 to create a weapon system that allows the player to pick up available weapons and modify their behavior depending on the location within the players inventory.
 
-The player can drag and drop equipped weapons (in inventory) to change the weapon behavior on the fly and cause additional interactions with the weapons in game. 
+The player can drag and drop equipped weapons (in inventory) to change the weapon behavior on the fly and cause additional interactions with the weapons in game.
+
+## Skills Developed
+- C++ in UE 5
+- Exposing C++ code to blueprints
+- Niagra VFX systems
+- Applying physics to objects
+- Skeletal mesh sockets
+- UI & input logic
+- Weapon state machines
 
 [mechanics]: https://github.com/AliClark2023/MechanicsAssessment

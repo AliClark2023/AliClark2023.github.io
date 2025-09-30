@@ -17,7 +17,7 @@ The player can drag and drop equipped weapons (in inventory) to change the weapo
 ## Skills Developed
 - C++ in UE 5
 - Exposing C++ code to blueprints
-- Niagra VFX systems
+- Niagara VFX systems
 - Applying physics to objects
 - Skeletal mesh sockets
 - UI & input logic

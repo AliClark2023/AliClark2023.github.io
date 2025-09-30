@@ -13,6 +13,8 @@ Link to the beta build: [beta build][beta]
 
 <br>
 ## Skills Developed
+- Project Management (Jira, gantt chart)
+- Cross disciple collaboration
 - Data table usage
 - Game mode and game mode component creation
 - Interaction interfaces

@@ -5,6 +5,16 @@ date:   2025-08-30 09:47:52 +0100
 categories: Further Development
 displayImage: assets/img/dareDemo.gif
 ---
+Dare Academy 2025 project in UE 5.4
+<!--more-->
+
+## Skills Developed
+- Creating controller functionality
+- Reiterating on past code
+- Animation blueprints
+- Sound attenuation fields/attributes
+- Light attenuation fields/attributes
+- Identifying optimization areas
 
 # ---Document-in-Progress---
 ![DCAEvent]({{ site.baseurl }}/assets/img/DCAEvent.jpg)
@@ -15,13 +25,7 @@ Link to the build used at the event: [DCAFinalBuild][build]
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GeDYPSRBskA?si=0DIg8njw1VeBaS0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
-## Skills Developed
-- Creating controller functionality
-- Reiterating on past code
-- Animation blueprints
-- Sound attenuation fields/attributes
-- Light attenuation fields/attributes
-- Identifying optimization areas
+
 
 ## Breakdown
 ##### Goals

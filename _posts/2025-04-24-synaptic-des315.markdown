@@ -5,13 +5,9 @@ date:   2025-04-24 09:47:52 +0100
 categories: University Project
 displayImage: assets/img/OpeningSceneGif.gif
 ---
+UE 5.4 Cross-discipline, narrative focused project
+<!--more-->
 
-# ---Document-in-Progress---
-Link to the beta build: [beta build][beta]
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PXlDNm1oWtM?si=uZ48GaDZ_laoyEym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<br>
 ## Skills Developed
 - Project Management (Jira, gantt chart)
 - Cross disciple collaboration
@@ -22,5 +18,13 @@ Link to the beta build: [beta build][beta]
 - Protoyping VFX
 - UI logic
 - Audio narration progression
+
+# ---Document-in-Progress---
+Link to the beta build: [beta build][beta]
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PXlDNm1oWtM?si=uZ48GaDZ_laoyEym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+
 
 [beta]: https://bonny-bandits.itch.io/synaptic/devlog/935211/synaptic-gold-master-is-out

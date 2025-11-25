@@ -3,8 +3,29 @@ layout: default
 ---
 
 
+<style>
+.post-img img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 128px;
+  height: 72px;
+  object-fit: cover;
+}
+</style>
+
+<style>
+.flex-row {
+  align-items:end;
+  gap: 1rem;
+  width: 128px;
+  height: 72px;
+  object-fit: cover;
+}
+</style>
+
 {%- if site.posts.size > 0 -%}
-    <!--  -->
+    
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in site.posts -%}
@@ -12,30 +33,26 @@ layout: default
         <!-- displaying inline img/gif with link centre right-->
         {%- if post.displayImage -%}
           <div style="display: flex; align-items: center; gap: 1rem;">
-            <span class="post-img"><img src="{{post.displayImage | relative_url}}" alt="PostImage" width="128" height="72" /></span>
+            <span class="post-img"><img src="{{post.displayImage | relative_url}}"></span>
             <div>
-              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <span class="flex-row">{{ post.date | date: date_format }}</span>
               <h2>
-              <a class="post-link" href="{{ post.url | relative_url }}">
+              <a class="flex-row" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
+              
+              <h4>
+              {%- if site.minima.show_excerpts -%}
+                {{ post.excerpt }}
+              {%- endif -%}
+              </h4>
               </a>
               </h2>
             </div>
           </div>
-        {%- else -%}
-
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-            </a>
-          </h3>
         {%- endif -%}
         <p></p>
-        {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+      
       </li>
       {%- endfor -%}
     </ul>
 {%- endif -%}
-

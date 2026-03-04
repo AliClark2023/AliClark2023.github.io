@@ -3,7 +3,7 @@ layout: post
 title:  "Honours Project: Hex Grid Procedural Generation"
 date:   2026-03-04 09:47:52 +0100
 categories: University Project
-displayImage: assets/img/WorldGenGif1.gif
+displayImage: assets/img/HPDemoGif.gif
 ---
 UE 5.6 Cave Map Generation
 <!--more-->

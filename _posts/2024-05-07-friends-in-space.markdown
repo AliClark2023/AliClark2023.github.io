@@ -22,6 +22,7 @@ Second year group project developed using university in-house game engine (Skate
 Recording listed above does not include audio.
 Project files are unlisted due to NDA.
 
-
-
-## Key notes
+## Keynotes
+Developed level progression system that pans camera to new segment of the map when a player reaches the edge threshold.
+Developed multiple level layouts and a system that randomly picks between them to produce unique games.
+Developed multiple platform types to add variation within each layout.

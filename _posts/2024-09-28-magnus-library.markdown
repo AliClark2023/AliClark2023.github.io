@@ -22,8 +22,8 @@ Game developed during [AGDS Freshers Jam 2024][GameJam]
 Link to [Magnus Library][GameJamLink]
 
 
-
 ## Key notes
+Developed inventory system that governed the addition and sequence of books for each level.
 
 [GameJam]: https://itch.io/jam/agds-freshers-jam-2024/entries
 [GameJamLink]: https://alex-onions.itch.io/magnuss-libary

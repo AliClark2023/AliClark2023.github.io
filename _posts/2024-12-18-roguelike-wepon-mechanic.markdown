@@ -16,8 +16,6 @@ UE 5.4 Weapon and inventory mechanics project
 - UI & input logic
 - Weapon state machines
 
-
-# ---Document-in-Progress---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Sg8J6A2iyek?si=stfhqjKZCdkweN-x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Link to the [mechanics project][mechanics]

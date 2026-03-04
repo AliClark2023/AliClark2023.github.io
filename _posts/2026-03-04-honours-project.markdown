@@ -17,12 +17,10 @@ UE 5.6 Cave Map Generation
 
 Link to up-to-date project: [Up-to-date build][UBuild]
 
-# Test posts
-
 # ---Project-In-Progress---
 ## 04/03/26
-(add link to video showing state of project)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mPZAbz5Ou28?si=RAc1isJ5nh-6A1i7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
 Huge changes to project since November with the main changes being:
 - Tighter focus on path generation instead of multiple layers
 - All path techniques integrated into project (Perlin Worms, DLA & Cellular Automata)
@@ -66,11 +64,14 @@ Considers all tiles within a grid as either Path or non-Path. Changes the state 
     - Birth limit: determines number of alive tiles needed to make central tile also alive.
 
 ### Playtesting
-(add screenshots of environment)
+UI environment:
+![UIMenu]({{ site.baseurl }}/assets/img/MenuSS.png)
 
+In-game environment:
+![In-Game]({{ site.baseurl }}/assets/img/InGameSS1.png)
 For the dissertation side of the project, a build is created that employs a testing environment containing a UI and multiple saved layouts for participants to explore. The goal of the environment is for the player to explore the layout with a controlled character and reach a specified exit tile. Questions about the layouts are then asked of the particpant regarding the nature and suitability of the layout.
 
-Currently this aspect of the project is for Internal University use only but may be opened up in the future.
+Currently this aspect of the project is for internal University use only but may be opened up in the future.
 
 ## 27/11/25
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RQ8pqYNIEN0?si=CnMCo62koo0OrYL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

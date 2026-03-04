@@ -16,7 +16,6 @@ Dare Academy 2025 project in UE 5.4
 - Light attenuation fields/attributes
 - Identifying optimization areas
 
-# ---Document-in-Progress---
 ![DCAEvent]({{ site.baseurl }}/assets/img/DCAEvent.jpg)
 Continuing the project from DES315 my team (Bonny Bandits) have improved upon "Synaptic" during the summer and have showcased our game to the public at the Dundee Contempoary Arts (DCA) building during its annual Drop-in and Play event.
 

@@ -9,18 +9,77 @@ UE 5.6 Cave Map Generation
 <!--more-->
 
 ## Skills Developed
-- c++ to blueprints
-- pathway algorithms
-- landscape algorithms
+- C++ to blueprints
+- Procedural Content Generation (PCG) Algorithms
 - UI implementation
 - Save & loading system
 
-Link to up-to-date project: [Up-to-date build][UBuild]
+## Goal
+To evaluate which PCG algorithms are suitable for generating pathways within a hex grid for a cave environment.
 
-# ---Project-In-Progress---
-## 04/03/26
+Link to up-to-date project: [Up-to-date build][UBuild]
+<br>
+Link to itch page: [Project Page][ItchPage]
+
+# ---Project-Completed---
+## 04/05/26
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mPZAbz5Ou28?si=RAc1isJ5nh-6A1i7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
+Honours project was completed by end of April and involved:
+- Collection and evaluating playtester responses
+- Identification of "Cave Features" in pathways
+- Write up of dissertation
+
+### Honour Project Findings
+PCG algorithms ordered in suitability (most to least):
+
+#### Drunkard Walk
+- Technique successfully applied to a hex grid, producing expected layouts.
+- Small but varied layouts, encompassing all cave features.
+- Most preferred PCG algorithm implemented, giving a sense of exploration.
+
+#### Cellular Automata
+- Simplest form (Wolfram codes), not suitable on hex grids.
+- Required more complex rule sets being created/adapted (Game of Life) to produce suitable layouts.
+- Produced layouts consisted of all cave features with a nearly even distribution.
+- Mixed response from players, split on liking the mixture of small passages and large open areas.
+
+#### Diffuse-Limited Aggregation (DLA)
+- Outward variation found unsuitable for hex grids.
+- Central variation successfully applied on hex grids but produced inorganic layouts and was excluded from testing.
+- Inward variation produced layouts encompassing one large central area containing multiple sub-areas and little narrow passages.
+- Players liked the openness of the layout but got frustrated with the amount of dead-ends and frequently got lost.
+
+#### Perlin Worms
+- Successfully applied to hex grid but direction logic seemed flawed as all paths generated were of a vertical nature.
+- Produced layouts heavily composed of narrow passages.
+- Most disliked layout, with players frequently getting lost and getting frustrated with the amount of claustrophobic passages.
+
+### Player Responses
+Small test group of six students responded to the survey, results follow:
+
+Preferred layouts:![PLayouts]({{ site.baseurl }}/assets/img/HP/PreferredLayouts.png)
+<br>
+<br>
+Disliked layouts: ![DLayouts]({{ site.baseurl }}/assets/img/HP/DislikedLayouts.png)
+
+### Identifying Cave Features
+In combination of player results, a visual inspection was performed to identify cave features generated.
+Identification followed this legend:
+<br>
+<br>
+![CFCode]({{ site.baseurl }}/assets/img/HP/CaveFeatureCode.png)
+<br>
+<br>
+Example of features being identified:
+![CFExample]({{ site.baseurl }}/assets/img/HP/DW_Results_Excerpt.png)
+<br>
+<br>
+Overall results:
+![CFResults]({{ site.baseurl }}/assets/img/HP/FeatureResults.png)
+
+
+## 04/03/26
 Huge changes to project since November with the main changes being:
 - Tighter focus on path generation instead of multiple layers
 - All path techniques integrated into project (Perlin Worms, DLA & Cellular Automata)
@@ -48,7 +107,7 @@ Modifies the Perlin noise function used by generating the landscape into a set a
 Number, length, frequency and seed parameters can all be adjusted to change the behaviours of these worms.
 Island detection & joining is applied after generation to ensure valid layout.
 
-#### Diffuse-Limited Aggregation (DLA)
+#### DLA
 Employs multiple specific drunkards walks around a starting "Seed" area to generate the pathways. Each walker travels until it comes into contact with a path tile, in which its previous tile becomes a path and the walker dies. Process is repeated until a layout size has been met.
 3 types of DLA are implemented:
 - Inwards: Walks are performed at random points throughout the map and travels towards the seed area.
@@ -69,7 +128,7 @@ UI environment:
 
 In-game environment:
 ![In-Game]({{ site.baseurl }}/assets/img/InGameSS1.png)
-For the dissertation side of the project, a build is created that employs a testing environment containing a UI and multiple saved layouts for participants to explore. The goal of the environment is for the player to explore the layout with a controlled character and reach a specified exit tile. Questions about the layouts are then asked of the particpant regarding the nature and suitability of the layout.
+For the dissertation side of the project, a build is created that employs a testing environment containing a UI and multiple saved layouts for participants to explore. The goal of the environment is for the player to explore the layout with a controlled character and reach a specified exit tile. Questions about the layouts are then asked of the participant regarding the nature and suitability of the layout.
 
 Currently this aspect of the project is for internal University use only but may be opened up in the future.
 
@@ -77,7 +136,7 @@ Currently this aspect of the project is for internal University use only but may
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RQ8pqYNIEN0?si=CnMCo62koo0OrYL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 
-This project will look at the effectiveness of multiple procedural generation technqiues in generating a cave system for isometric games.
+This project will look at the effectiveness of multiple procedural generation techniques in generating a cave system for isometric games.
 Goal of project is to create a continuous game map by stacking multiple layers of procedural generated levels.
 
 Link to 27/11/25 build: [Demo][FBuild]
@@ -89,17 +148,17 @@ Uses drunkards walk to generate a path from a designated start point until a spe
 Iteration ends when path is no longer able to proceed (all surrounding neighbouring tiles have already been visited) or has met path size.
 
 ### landscape generation
-Uses UE defualt perlin noise to adjust all height values of landscape tiles. This can be adjusted by modifying the noise scale and the height multipler which governs the max height of the generation.
+Uses UE default perlin noise to adjust all height values of landscape tiles. This can be adjusted by modifying the noise scale and the height multiple which governs the max height of the generation.
 
-### Region generaion
-Voronoi regions are created by using seed locations planted at random within the grid. TIles calculate and are assigned to the seed location they are closest to. 
-Number of seeds can be adjusted but currently there are only 5 unqiue biomes immplemented.
+### Region generation
+Voronoi regions are created by using seed locations planted at random within the grid. Tiles calculate and are assigned to the seed location they are closest to. 
+Number of seeds can be adjusted but currently there are only 5 unique biomes implemented.
 
 ### Level formation
 Combining each of the previous techniques generates a map with random characteristics
 
 ### World formation
-Specifying how many layers to generate will perform the level formation for each layer. The result is that each layer will have its own unque properties. 
+Specifying how many layers to generate will perform the level formation for each layer. The result is that each layer will have its own unique properties. 
 
 ### Current development notes
 At time of this post, all layered levels will share the same generation parameters (output still random) but will be individually assigned in later builds
@@ -110,3 +169,4 @@ Other notable developments are in the readme of the project files.
 
 [UBuild]: https://github.com/AliClark2023/HonorsTesting/tree/main
 [FBuild]: https://github.com/AliClark2023/HonorsTesting/tree/FeasibilityDemo
+[ItchPage]: https://aliclarkdev.itch.io/path-generation-for-isometric-cave-environments
